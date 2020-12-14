@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="quest-home">
+</div>
+<div id="headfont1">
+    <p id="formfont_ans">
+        {% if answer %}
+        The rating for your review is : {{answer}}
+        {% else %}
+        No rating to be shown as there is no input review. Please go back and enter a review.
+        {% endif %}
+    </p>
+</div>
+
+{% endblock %}

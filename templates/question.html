@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="quest-home">
+</div>
+
+<div id="headfont1">
+    <h1 class="display-4">Game Review's Rating Recommender!!</h1>
+    {% if comment %}
+    The comment you entered is {{comment}}
+    {% else %}
+    <h1 class="display-4">
+        Please enter a comment.
+        {% endif %}
+    </h1>
+    <form method="POST" , id="forms" , class="display-4">
+        {{form.hidden_tag()}}
+        {{form.comment.label}}{{form.comment()}}
+        {{form.submit()}}
+    </form>
+
+</div>
+
+{% endblock %}
