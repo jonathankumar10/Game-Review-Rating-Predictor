@@ -3,14 +3,40 @@
 {% block content %}
 <div id="quest-home">
 </div>
+
 <div id="headfont1">
-    <p id="formfont_ans">
-        {% if answer %}
-        The rating for your review is : {{answer}}
-        {% else %}
-        No rating to be shown as there is no input review. Please go back and enter a review.
-        {% endif %}
-    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <p id="formfont_ans">
+                    {% if comment %}
+                    Your input review is : {{comment}}
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-sm">
+                <p id="formfont_ans">
+                    {% if answer %}
+                    The probabilities for your review ratings are :
+                    {% endif %}
+                </p>
+                {% if answer %}
+                {% for key, value in prob.items() %}
+                <p id="formfont_ans1">for rating {{ key }} value = {{value}}</p>
+                {% endfor %}
+                {% endif %}
+            </div>
+            <div class="col-sm">
+                <p id="formfont_ans">
+                    {% if answer %}
+                    The rating for your review is : {{answer}}
+                    {% else %}
+                    No rating to be shown as there is no input review. Please go back and enter a review.
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
 
 {% endblock %}

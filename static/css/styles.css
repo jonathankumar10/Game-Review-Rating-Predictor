@@ -58,7 +58,6 @@ body, html {
     height: 95%;
     margin: 10px;
     text-align: center;
-    padding-top: 10%;
   }
 
   #headfont {
@@ -149,4 +148,21 @@ body, html {
     text-align: center;
     margin-top: 30%;
     font-family: 'Cursive';
+    font-size: 20px;
   }
+
+
+  #formfont_ans1{
+    color: white;
+    text-align: center;
+    font-family: 'Cursive';
+    font-size: 20px;
+  }
+
+  .row .col-sm :hover{
+    background-color:rgb(0, 0, 0); /* Green */
+    color: #dbdbdb;
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(133, 133, 133, 0.19);
+  }
+
+  
