@@ -3,7 +3,6 @@ from flask import Flask, session, url_for, redirect, render_template
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 import pickle
-import pandas as pd
 from pandas import DataFrame
 
 with open('./datasets/pickle_data/final_model_multinomial.pkl', 'rb') as pickle_file:
